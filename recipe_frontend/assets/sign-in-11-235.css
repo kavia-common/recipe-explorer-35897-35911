@@ -1,2 +1,2 @@
 /* Sign In screen specific styles. Most pixel-accurate positions are inline to preserve exact coordinates. */
-#screen-11-235 { }
+#screen-11-235 { font-family: var(--typo-61-family); }

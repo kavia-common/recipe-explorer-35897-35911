@@ -1,8 +1,6 @@
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
-    // Hook up potential interactions (not in JSON). Non-functional placeholders only.
-    // Example: console logs for buttons
-    // Big Button
-    // Social buttons
+    // Hook up potential interactions (not required). Non-functional placeholders only.
+    // Example: attach click logs if needed in the future.
   });
 })();

@@ -27,8 +27,7 @@
   --color-c1c1c1: #c1c1c1;
   --color-ffe1b3: #ffe1b3;
   --color-ffad30: #ffad30;
-  --color-dbeb e7: #dbebe7; /* Will not be used directly; fix spacing below */
-  --color-dbeb-e7: #dbebe7;
+  --color-dbeb-e7: #dbebe7; /* corrected key */
   --color-898989: #898989;
   --color-292d32: #292d32;
   --color-181818: #181818;
@@ -47,8 +46,8 @@
   --color-9747ff: #9747ff;
   --color-828282: #828282;
 
-/* Typography variables from design_system.typography (subset needed + ability to extend) */
-  --typo-58-family: 'Poppins', sans-serif;
+/* Typography variables (sensible defaults inferred) */
+  --typo-58-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-58-size: 16px;
   --typo-58-weight: 600;
   --typo-58-line-height: 24px;
@@ -56,7 +55,7 @@
   --typo-58-text-align: center;
   --typo-58-color: var(--color-ffffff);
 
-  --typo-60-family: 'Poppins', sans-serif;
+  --typo-60-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-60-size: 30px;
   --typo-60-weight: 600;
   --typo-60-line-height: 45px;
@@ -64,7 +63,7 @@
   --typo-60-text-align: left;
   --typo-60-color: var(--color-000000);
 
-  --typo-61-family: 'Poppins', sans-serif;
+  --typo-61-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-61-size: 20px;
   --typo-61-weight: 400;
   --typo-61-line-height: 30px;
@@ -72,7 +71,7 @@
   --typo-61-text-align: left;
   --typo-61-color: var(--color-121212);
 
-  --typo-62-family: 'Poppins', sans-serif;
+  --typo-62-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-62-size: 11px;
   --typo-62-weight: 400;
   --typo-62-line-height: 16.5px;
@@ -80,7 +79,7 @@
   --typo-62-text-align: center;
   --typo-62-color: var(--color-ff9c00);
 
-  --typo-63-family: 'Poppins', sans-serif;
+  --typo-63-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-63-size: 11px;
   --typo-63-weight: 500;
   --typo-63-line-height: 16.5px;
@@ -88,7 +87,7 @@
   --typo-63-text-align: left;
   --typo-63-color: var(--color-000000);
 
-  --typo-64-family: 'Poppins', sans-serif;
+  --typo-64-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-64-size: 11px;
   --typo-64-weight: 500;
   --typo-64-line-height: 16.5px;
@@ -96,7 +95,7 @@
   --typo-64-text-align: left;
   --typo-64-color: var(--color-d9d9d9);
 
-  --typo-65-family: 'Poppins', sans-serif;
+  --typo-65-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-65-size: 11px;
   --typo-65-weight: 400;
   --typo-65-line-height: 16.5px;
@@ -104,7 +103,7 @@
   --typo-65-text-align: left;
   --typo-65-color: var(--color-d9d9d9);
 
-  --typo-66-family: 'Poppins', sans-serif;
+  --typo-66-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-66-size: 14px;
   --typo-66-weight: 400;
   --typo-66-line-height: 21px;
@@ -112,7 +111,7 @@
   --typo-66-text-align: left;
   --typo-66-color: var(--color-121212);
 
-  --typo-67-family: 'SF Pro Display', sans-serif;
+  --typo-67-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --typo-67-size: 15px;
   --typo-67-weight: 500;
   --typo-67-line-height: 17.900390625px;
@@ -120,7 +119,7 @@
   --typo-67-text-align: left;
   --typo-67-color: var(--color-303030);
 
-/* Styles from design_system.styles (partial set used on this screen) */
+/* Styles (subset used on this screen) */
   --style-10-bg: var(--color-ffffff);
   --style-10-radius: 30px;
 
@@ -158,7 +157,7 @@
   --style-126-bg: var(--color-ffffff);
   --style-126-radius: 10px;
 
-/* Shadows from design_system.shadows used by style_126 (shadow_0) */
+/* Shadows used by style_126 (shadow_0) */
   --shadow-0: 0px 0px 5px 3px #696969;
 
 /* Spacing examples (generic scale variables) */
@@ -169,7 +168,10 @@
   --spacing-xl: 32px;
 }
 
+/* Reset basics */
 * { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { border: 0; }
 
 .screen-container {
   position: relative;
